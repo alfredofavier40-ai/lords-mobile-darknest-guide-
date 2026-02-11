@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guía Fortaleza Oscura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Guía Fortaleza Oscura</h1>
+
+<label>Tipo de Fortaleza</label>
+<select id="nest">
+  <option value="inf">Infantería</option>
+  <option value="range">Rango</option>
+  <option value="cav">Caballería</option>
+</select>
+
+<label>Tu mejor armadura:</label>
+<select id="gear">
+  <option value="inf">Set Infantería</option>
+  <option value="range">Set Rango</option>
+  <option value="cav">Set Caballería</option>
+  <option value="mixed">Mixto</option>
+</select>
+
+<label>Tipo de jugador:</label>
+<select id="player">
+  <option value="f2p">F2P</option>
+  <option value="p2p">P2P</option>
+</select>
+
+<button onclick="calcular()">Calcular Ataque</button>
+
+<div id="resultado"></div>
+
+<script src="data/heroes.js"></script>
+<script src="data/nests.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
